@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 { color: var(--primary-color); margin-bottom: 5px; }
+h2 { color: var(--primary-color); font-size: 1.2rem; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+
+/* Formulario */
+.form-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Importante para que no se salga */
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+.btn-primary:hover { background-color: #2980b9; }
+
+/* Tabla */
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.book-table th, .book-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.book-table th { background-color: #f8f9fa; }
+
+/* Botones de acción (para después) */
+.action-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+.btn-loan { background-color: #f1c40f; color: #fff; }
+.btn-delete { background-color: #e74c3c; color: #fff; }
